@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <head>
+    <style>
+      body,div,p{
+        padding: 0;
+        margin: 0;
+      }
+      body{
+        height:200px;
+        width:250px
+      }
+      .title{
+        width: 100%;
+        border: 1px solid #F5F5F5;
+        color: #237804;
+        text-align: center;
+        line-height: 42px;
+        font-size: 18px;     
+      }
+      .block-container{
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 13px;
+        padding:0 12px;
+        line-height: 23px;
+        font-size: 12px;
+        color: #262626;
+        white-space: pre-wrap;
+      }
+      #block-input{
+        display: inline-block;
+        width: 40px;
+        height: 19px;
+        line-height: 19px;
+        font-size: 12px;
+        outline: none;
+        border:none;
+        border-bottom: 1px solid #262626;
+      }
+      button{
+        background: #FBF4EF;
+        border: 1px solid #E7D2C5;
+        line-height: 17px;
+        border-radius: 4px;
+        color: #777;
+        outline: none;
+        cursor: pointer;
+      }
+      button:hover,button:visited{
+        border-color: #e7d2c5;
+        background:#fbf4ef
+      }
+      .delete-container{
+        margin-top: 70px;
+        width: 100%;
+        position: relative;
+      }
+      .delete-button{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <p class="title">豆删删</p>
+    <div class="block-container">我真的再也不想看到<input id="block-input" />的帖子了，<button id="block-button">真的</button>。
+
+等等，<button  id="reset-button">我又想你了</button>。
+    </div>
+    <!-- <div class="delete-container">
+      <button class="delete-button">清空本页回复</button>
+    </div> -->
+    <script src="js/popup.js"></script>
+  </body>
+</html>

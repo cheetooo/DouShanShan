@@ -1,0 +1,27 @@
+{
+  "name": "DouShanShan",
+  "version": "1.0",
+  "description": "我再也不想看到你了！",
+  "permissions": ["activeTab", "declarativeContent","webNavigation","*://*.douban.com/", "storage","cookies","*://*.douban.com/"],
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": true
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/16_16.png",
+      "32": "images/32_32.png",
+      "48": "images/48_48.png",
+      "128": "images/128_128.png"
+    }
+  },
+  "icons": {
+    "16": "images/16_16.png",
+    "32": "images/32_32.png",
+    "48": "images/48_48.png",
+    "128": "images/128_128.png"
+  },
+  "manifest_version": 2
+}
